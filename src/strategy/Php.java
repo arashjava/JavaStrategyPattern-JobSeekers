@@ -5,7 +5,7 @@
  */
 package strategy;
 
-public class Php extends JavaJob{
+public class Php extends Job{
     
     public Php(){
         super();

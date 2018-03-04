@@ -5,7 +5,7 @@
  */
 package strategy;
 
-public class Python extends JavaJob{
+public class Python extends Job{
     
     public Python(){
         super();

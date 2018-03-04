@@ -6,7 +6,7 @@
 package strategy;
 
 
-public class JavaJob {
+public class Job {
     private String name;
 
     public Jobs jobType;

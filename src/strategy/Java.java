@@ -5,7 +5,7 @@
  */
 package strategy;
 
-public class Java extends JavaJob{
+public class Java extends Job{
     
 
     public Java(){
