@@ -9,15 +9,11 @@ package strategy;
 public class Job {
     private String name;
 
-    public Jobs jobType;
+
     public String[] jobList= new String[5];
 
     public String[] findJobs(){
             return jobList;
-    }
-    
-    public void setJob(Jobs newJob){
-            jobType = newJob;
     }
     
     public String getName() {
