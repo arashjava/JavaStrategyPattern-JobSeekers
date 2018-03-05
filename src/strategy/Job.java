@@ -28,15 +28,5 @@ public class Job {
     public void setMyJobs(ArrayList<String> myJobs) {
         this.myJobs = myJobs;
     }
-    
-    
-    
-    public String getJobs(){
-            return jobTitle.job();
-    }
-    
-    public void setJob(Jobs title){
-            jobTitle= title;
-    }
-    
+
 }
