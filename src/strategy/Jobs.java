@@ -38,7 +38,7 @@ class PythonFullStack implements Jobs{
 
 class PythonDev implements Jobs{
 	public String job() {
-	    return "Python Full-Stack Developer";
+	    return "Python Developer";
 	}
 }
 
