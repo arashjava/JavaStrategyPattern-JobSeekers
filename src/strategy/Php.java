@@ -5,13 +5,19 @@
  */
 package strategy;
 
+import java.util.ArrayList;
+
 public class Php extends Job{
-    
+    ArrayList<String> myJobs = new ArrayList<String>();
     public Php(){
         super();
-        jobList[0]= new PhpFullStack().job();
-        jobList[1]= new PhpJavaFullStack().job();              
-        jobList[2]= new PhpPythonFullStack().job();              
+        jobTitle= new PhpFullStack();
+        myJobs.add(jobTitle.job());
+        jobTitle= new PhpJavaFullStack();
+        myJobs.add(jobTitle.job());
+        jobTitle= new PhpPythonFullStack();
+        myJobs.add(jobTitle.job());
+        setMyJobs(myJobs);
 
     }
 }

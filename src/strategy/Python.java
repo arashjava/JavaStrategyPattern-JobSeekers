@@ -5,14 +5,20 @@
  */
 package strategy;
 
+import java.util.ArrayList;
+
 public class Python extends Job{
-    
+    ArrayList<String> myJobs = new ArrayList<String>();
     public Python(){
         super();
-
-        jobList[0]= new PythonFullStack().job();
-        jobList[1]= new PythonJavaFullStack().job();              
-        jobList[2]= new PythonDev().job();              
-        jobList[3]= new PhpPythonFullStack().job();   
+        jobTitle= new PythonFullStack();
+        myJobs.add(jobTitle.job());
+        jobTitle= new PythonJavaFullStack();
+        myJobs.add(jobTitle.job());
+        jobTitle= new PythonDev();
+        myJobs.add(jobTitle.job());
+        jobTitle= new PhpPythonFullStack();
+        myJobs.add(jobTitle.job());
+        setMyJobs(myJobs);
     }
 }

@@ -5,17 +5,14 @@
  */
 package strategy;
 
+import java.util.ArrayList;
+
 
 public class Job {
+    public Jobs jobTitle;
     private String name;
+    private ArrayList<String> myJobs= new ArrayList<>();
 
-
-    public String[] jobList= new String[5];
-
-    public String[] findJobs(){
-            return jobList;
-    }
-    
     public String getName() {
         return name;
     }
@@ -23,4 +20,23 @@ public class Job {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public ArrayList<String> getMyJobs() {
+        return myJobs;
+    }
+
+    public void setMyJobs(ArrayList<String> myJobs) {
+        this.myJobs = myJobs;
+    }
+    
+    
+    
+    public String getJobs(){
+            return jobTitle.job();
+    }
+    
+    public void setJob(Jobs title){
+            jobTitle= title;
+    }
+    
 }

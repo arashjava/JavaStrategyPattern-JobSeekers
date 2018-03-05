@@ -7,27 +7,26 @@ package strategy;
 
 public class JobPicker{
 	
-	public static void main(String[] args){
-		
-		Job seeker1 = new Java();
-                seeker1.setName("Bob Jones");
-                showAvailJobs(seeker1);
+    public static void main(String[] args){
 
-		Job seeker2 = new Php();
-                seeker2.setName("Treza Brown");
-                showAvailJobs(seeker2);
-
-		Job seeker3 = new Python();
-                seeker3.setName("Robert Robb");
-                showAvailJobs(seeker3);		
-	}
+        Job seeker1 =new Java();
+        seeker1.setName("Bob Jones");
+        showJobs(seeker1);
         
-        private static void showAvailJobs(Job seeker){
-                for (int i=0; i< seeker.jobList.length; i++){
-                    if (seeker.jobList[i]!= null) {
-                       System.out.println(seeker.getName() + " can work as: "+ seeker.jobList[i]);
-                    }
+        Job seeker2 =new Php();
+        seeker2.setName("Treza Brown");
+        showJobs(seeker2);
+                
+        Job seeker3 =new Python();
+        seeker3.setName("Patt Roberts");
+        showJobs(seeker3);
+    }
+        
+    private static void showJobs(Job seeker){
+                 System.out.println("Jobs available for "+ seeker.getName() + " are:");
+                for (String s: seeker.getMyJobs()){
+                      System.out.println("\t"+s);
                 }
-        }
+    }
 	
 }

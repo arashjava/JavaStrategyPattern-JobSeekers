@@ -5,15 +5,21 @@
  */
 package strategy;
 
-public class Java extends Job{
-    
+import java.util.ArrayList;
 
+public class Java extends Job{
+    ArrayList<String> myJobs = new ArrayList<String>();
     public Java(){
             super();
-            jobList[0]= new JavaDev().job();
-            jobList[1]= new JavaFullStack().job();              
-            jobList[2]= new PhpJavaFullStack().job();              
-            jobList[3]= new PythonJavaFullStack().job();              
+            jobTitle= new JavaDev();
+            myJobs.add(jobTitle.job());
+            jobTitle= new JavaFullStack();
+            myJobs.add(jobTitle.job());
+            jobTitle= new PhpJavaFullStack();
+            myJobs.add(jobTitle.job());
+            jobTitle= new JavaDev();
+            myJobs.add(jobTitle.job());
+            setMyJobs(myJobs);
     }
 
 
